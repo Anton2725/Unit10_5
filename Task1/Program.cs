@@ -12,10 +12,10 @@ namespace Task1
 
             Console.WriteLine("Для сложения введите последовательно два числа:");
 
+            Calc calc = new Calc();
             var a = Calc.ReadNumber();
             var b = Calc.ReadNumber();
-            
-            INumberWork calc = new Calc();
+
             var sum = calc.Sum(a, b);
 
             Console.WriteLine($"{a} + {b} = {sum}");
